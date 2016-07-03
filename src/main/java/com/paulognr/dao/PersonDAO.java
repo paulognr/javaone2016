@@ -1,9 +1,9 @@
 package com.paulognr.dao;
 
-import java.util.Collections;
 import java.util.List;
 
 import com.paulognr.model.Person;
+import com.paulognr.util.DataUtil;
 
 /**
  * Just a "fake" dao
@@ -25,6 +25,6 @@ public class PersonDAO {
 	}
 
 	public List<Person> findAll() {
-		return Collections.emptyList();
+		return DataUtil.getAllPerson();
 	}
 }
